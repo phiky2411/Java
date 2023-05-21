@@ -32,12 +32,5 @@ public class CanBo {
         System.out.println("So ngay lam viec:"+ ngayLam);
         
     }
-    public static void main(String[] args) {
-        CanBo canBo = new CanBo();
-        canBo.nhap();
-        System.out.println("Thong tin vua nhap la:");
-        System.out.println("Luong thuc nhan la:"+ canBo.TinhLuong());
-        canBo.xuat();
-    }
     
 }

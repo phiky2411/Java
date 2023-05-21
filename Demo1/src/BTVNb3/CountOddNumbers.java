@@ -25,7 +25,7 @@ public class CountOddNumbers {
         
         for (int i = 0; i < n; i++){
             if (a[i] % 2 == 1){
-                a[i] = count++;
+                count++;
             }
         }
         System.out.println("\nSo luong so nguyen le la :"+ count);
