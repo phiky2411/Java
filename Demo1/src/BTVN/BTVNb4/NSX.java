@@ -5,22 +5,22 @@ import java.util.Scanner;
 
 
 public class NSX {
-    private int Mansx;
-    private String Tennsx;
-    private String Dcnsx;
+    private int maNsx;
+    private String tenNsx;
+    private String dcNsx;
     Scanner sc = new Scanner(System.in);
     
     public void nhapNSX(){
         System.out.println("Nhap ma nsx:");
-        Mansx = sc.nextInt();
+        maNsx = sc.nextInt();
         System.out.println("Nhap ten nsx:");
-        Tennsx = sc.nextLine();
+        tenNsx = sc.nextLine();
         
         sc.nextLine();
         System.out.println("Nhap dia chi nsx:");
-        Dcnsx = sc.nextLine();
+        dcNsx = sc.nextLine();
     }
     public void xuatNSX(){
-        System.out.println(Mansx +" - "+ Tennsx +" - "+ Dcnsx);
+        System.out.println(maNsx +" - "+ tenNsx +" - "+ dcNsx);
     }
 }

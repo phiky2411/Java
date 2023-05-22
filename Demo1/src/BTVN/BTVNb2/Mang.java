@@ -1,8 +1,8 @@
-package BTVN;
+package BTVN.BTVNb2;
 
 import java.util.Scanner;
 
-public class BTVNb2 {
+public class Mang {
 
     public static void main(String[] args) {
         int n;

@@ -1,8 +1,8 @@
-package BTVN;
+package BTVN.BTVNb1;
 
 import java.util.Scanner;
 
-public class BTVNb1 {
+public class HinhChuNhat {
 
     
     public static void main(String[] args) {
