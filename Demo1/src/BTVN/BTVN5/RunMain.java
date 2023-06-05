@@ -20,7 +20,7 @@ public class RunMain {
         }
         System.out.println("Nhung DH hang Electroluc va gia re nhat:");
         for (Dieuhoa d: dieuhoas){
-            d.toString();
+            d.xuatDH();
         }
         int d = 0;
         long min = dieuhoas.get(0).getGiaBan();
@@ -31,7 +31,7 @@ public class RunMain {
         }
         for (int i = 0; i < n; i++) {
             if ("Ele".equalsIgnoreCase(dieuhoas.get(i).getHangSanXuat()) && dieuhoas.get(i).getGiaBan() == min) {
-                dieuhoas.get(i).toString();
+                dieuhoas.get(i).xuatDH();
                 d++;
             }
 
