@@ -10,36 +10,36 @@ public class RunMain {
         int n;
         System.out.println("Number of student:");
         n = sc.nextInt();
-        Student[] Students = new Student[n];
+        Student[] students = new Student[n];
         
         for (int i = 0; i < n; i++) {
-            Students[i] = new Student();
-            Students[i].input();
+            students[i] = new Student();
+            students[i].input();
             System.out.println("=========");
         }
         System.out.println("Information of student:");
         
         for (int i = 0; i < n; i++) {
-            Students[i].output();
+            students[i].output();
         }
         
         for (int i = 0; i < n; i++) {
-            if (Students[i].getScore() > 8) {
+            if (students[i].getScore() > 8) {
                 System.out.println("Student have score > 8:");
-                Students[i].output();
+                students[i].output();
             }
         }
 
-        float score_max = Students[0].getScore();
+        float score_max = students[0].getScore();
         int index = 0;
         for (int i = 0; i < n; i++) {
-            if (Students[i].getScore() > score_max) {
-                score_max = Students[i].getScore();
+            if (students[i].getScore() > score_max) {
+                score_max = students[i].getScore();
                 index = i;
             }
         }
         System.out.println("Student have highest score:");
-        Students[index].output();
+        students[index].output();
     }
 
 }
