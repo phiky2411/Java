@@ -81,18 +81,17 @@ public class RunMain {
                     break;
                 case 6:
                     System.out.println("===SHOW STUDENT===");
-                    for (Student a : students) {
-                        a.output();
+                    for (Student sv : students) {
+                        sv.output();
                     }
-            }
+                    }
                     break;
-            
-                    default:
-            System.out.println("Chon sai");
+
+        default: System.out.println("Chon sai");
+
             
         } while(choice != 0);
-          System.out.println ("===CHOOSE AGAIN===");
-        
-        } 
-    }
+        System.out.println("===CHOOSE AGAIN===");
 
+    }
+}
