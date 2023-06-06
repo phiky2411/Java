@@ -21,6 +21,13 @@ class RunMain {
             a.nhapSV();
             sv.add(a);
         }
+        int count = 0;
+        for(int i = 0; i < sv.size(); i++){
+            if(sv.get(i).getKhoaHoc() == 14){
+                count++;
+            }
+        }
+        System.out.println("So SV khoa hoc 14 la: "+ count);  
         
         Collections.sort(sv, new Comparator<SinhVien>() {
             @Override

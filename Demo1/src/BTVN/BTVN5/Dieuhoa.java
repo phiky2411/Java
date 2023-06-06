@@ -10,7 +10,7 @@ public class Dieuhoa extends Sanpham{
     private Long giaBan;
     Scanner sc = new Scanner(System.in);
     
-    public void nhap(){
+    public void nhapDH(){
         super.nhap();
         System.out.println("Nhap cong suat:");
         congSuat = sc.nextLine();
@@ -18,10 +18,10 @@ public class Dieuhoa extends Sanpham{
         giaBan = sc.nextLong();
     }
 
-    @Override
-    public String toString() {
-        super.toString();
-        return "Dieuhoa{" + "congSuat=" + congSuat + ", giaBan=" + giaBan + '}';
+    public void xuatDH(){
+       super.toString();
+        System.out.println("Cong suat: "+ congSuat);
+        System.out.println("Gia ban:"+ giaBan);
     }
 
     public String getCongSuat() {

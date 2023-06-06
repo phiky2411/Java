@@ -15,13 +15,11 @@ public class RunMain {
         for (int i = 0; i < n; i++) {
             Dieuhoa d = new Dieuhoa();
             System.out.println("Nhap thong tin san pham thu " + (i + 1));
-            d.nhap();
+            d.nhapDH();
             dieuhoas.add(d);
         }
         System.out.println("Nhung DH hang Electroluc va gia re nhat:");
-        for (Dieuhoa d: dieuhoas){
-            d.xuatDH();
-        }
+
         int d = 0;
         long min = dieuhoas.get(0).getGiaBan();
         for (int i = 1; i < n; i++) {
@@ -36,10 +34,10 @@ public class RunMain {
             }
 
         }
-        if (d == 0){ 
+        if (d == 0) {
             System.out.println("Ko co SP nao");
         }
-        
+
     }
 
 }

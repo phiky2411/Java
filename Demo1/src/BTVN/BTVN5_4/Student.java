@@ -4,16 +4,22 @@ import java.util.Scanner;
 
 public class Student {
 
-    private String id;
+    private int id;
     private String name;
     private String address;
     private int age;
     private float gpa;
     Scanner sc = new Scanner(System.in);
 
-    public void input(){
+   
+    public static int ID = 1;
+
+    public void input() {
+        this.id = ID;
+        ID++;
+        
         System.out.println("ENTER ID: ");
-        id = sc.nextLine();
+        id = sc.nextInt();
         System.out.println("ENTER STD NAME: ");
         name = sc.nextLine();
         System.out.println("ENTER STD ADDRESS:");
@@ -23,19 +29,17 @@ public class Student {
         System.out.println("ENTER STD GPA: ");
         gpa = sc.nextFloat();
     }
-    public void output(){
-        System.out.println("ID: "+ id);
-        System.out.println("Name: "+ name);
-        System.out.println("Address: "+ address);
-        System.out.println("Age: "+ age);
-        System.out.println("GPA: "+ gpa);
+
+    public void output() {
+        String line = String.format("%5d&20s&20s%5d%5d", id, name, address, age, gpa);
+        System.out.println(line);
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(String ID) {
         this.id = id;
     }
 
