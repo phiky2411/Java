@@ -20,6 +20,7 @@ public class Student {
         
         System.out.println("ENTER ID: ");
         id = sc.nextInt();
+        sc.nextLine();
         System.out.println("ENTER STD NAME: ");
         name = sc.nextLine();
         System.out.println("ENTER STD ADDRESS:");
