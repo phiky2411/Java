@@ -38,11 +38,18 @@ public class RunMain {
                     String idEdit = sc.nextLine();
                     for (int i = 0; i < students.size(); i++) {
                         if (idEdit.equals(students.get(i).getId())) {
-                            Student k = new Student();
-                            System.out.println("ID edit:");
-                            k.input();
-                            students.remove(i);
-                            students.add(i, k);
+                            System.out.println("Nhap dia chi moi");
+                            String diaChiMoi = sc.nextLine();
+                            students.get(i).setAddress(diaChiMoi);
+                            System.out.println("Nhap tuoi moi");
+                            int tuoiMoi = sc.nextInt();
+                            students.get(i).setAge(tuoiMoi);
+                            System.out.println("Nhap GPA moi:");
+                            float gpaMoi = sc.nextFloat();
+                            students.get(i).setGpa(gpaMoi);
+                            System.out.println("Nhap ten moi:");
+                            String tenMoi = sc.nextLine();
+                            students.get(i).setName(tenMoi);
                         }
                     }
                     break;
@@ -81,7 +88,7 @@ public class RunMain {
                     break;
                 case 6:
                     System.out.println("===SHOW STUDENT===");
-                    for (Student sv : students) {
+                    for (Student sv: students) {
                         sv.output();
 
                     }

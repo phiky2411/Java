@@ -32,10 +32,11 @@ public class Student {
     }
 
     public void output() {
-        String line = String.format("%5d&20s&20s%5d%5d", id, name, address, age, gpa);
+        String line = String.format("%10d&20s&20s%10d%10f", id, name, address, age, gpa);
         System.out.println(line);
     }
-
+    
+    
     public int getId() {
         return id;
     }
